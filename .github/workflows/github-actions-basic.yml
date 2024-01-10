@@ -30,7 +30,9 @@ jobs:
     - name: Activate Conda Environment
       shell: powershell
       run: |
-          #conda init powershell
+          # Add Conda to the PATH
+          $env:PATH = "C:\Users\tze\miniconda3\Scripts;C:\Users\tze\miniconda3;$env:PATH"
+          conda init powershell
           conda activate base
 
     - name: Update Conda Environment
