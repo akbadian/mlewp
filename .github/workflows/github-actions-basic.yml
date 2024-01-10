@@ -30,7 +30,7 @@ jobs:
     - name: Activate Conda Environment
       shell: powershell
       run: |
-          conda init powershell
+          #conda init powershell
           conda activate base
 
     - name: Update Conda Environment
