@@ -7,8 +7,8 @@ jobs:
     runs-on: windows-latest
         
     strategy:
-    matrix:
-      python-version: [3.8.5, 3.10]
+      matrix:
+        python-version: [3.8.5, 3.10]
     
     steps:
       - uses: conda-incubator/setup-miniconda@v3
