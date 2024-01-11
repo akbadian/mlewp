@@ -33,8 +33,7 @@ jobs:
     - name: Check and Create Directory
       run: |
         if (-not (Test-Path -Path "Chapter02" -PathType Container)) {
-             New-Item -Path "Chapter02" -ItemType Directory}
-        fi
+             New-Item -Path "Chapter02" -ItemType Directory} 
       working-directory: ${{ github.workspace }}
 
     - name : Test with pytest
