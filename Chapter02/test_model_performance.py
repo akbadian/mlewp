@@ -1,5 +1,3 @@
-pip install numpy
-
 import numpy as np
 import pytest
 from typing import Union
