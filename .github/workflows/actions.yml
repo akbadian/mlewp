@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: conda-incubator/setup-miniconda@v3
         with:
-          auto-update-conda: true
+          auto-update-conda: True
           python-version: ${{ matrix.python-version }}
       
       - name: Conda info
