@@ -32,8 +32,8 @@ jobs:
     
     - name: Check and Create Directory
       run: |
-        if [ ! -d "Chapter02" ]; then
-          mkdir "Chapter02"
+        if (-not (Test-Path -Path "Chapter02" -PathType Container)) {
+             New-Item -Path "Chapter02" -ItemType Directory}
         fi
       working-directory: ${{ github.workspace }}
 
