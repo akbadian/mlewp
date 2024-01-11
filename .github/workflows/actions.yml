@@ -4,11 +4,10 @@ on: [push]
 
 jobs:
   build:
-    runs-on: windows-latest
-        
+    runs-on: windows-latest    
     strategy:
       matrix:
-        python-version: [3.8.5, 3.10]
+        python-version: 3.8.5
     
     steps:
       - uses: conda-incubator/setup-miniconda@v3
