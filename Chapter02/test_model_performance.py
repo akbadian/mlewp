@@ -1,5 +1,7 @@
-import pytest
+pip install numpy
+
 import numpy as np
+import pytest
 from typing import Union
 import sklearn
 from sklearn.ensemble import RandomForestClassifier
@@ -7,7 +9,7 @@ from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
 from huggingface_hub import hf_hub_download
 from sklearn.metrics import classification_report
-import  joblib
+import joblib
 
 @pytest.fixture
 def test_dataset() -> Union[np.array, np.array]:
