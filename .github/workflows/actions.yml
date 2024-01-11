@@ -22,7 +22,7 @@ jobs:
           pip install flake8 pytest
           pushd Chapter02
           if (Test-Path "Chapter02/requirements.txt") {pip install -r requirements.txt}
-          popd
+          popd #
       
     - name: Lint with flake8
       run: |
